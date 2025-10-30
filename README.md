@@ -1,2 +1,179 @@
 # Vaibhavi-Ladies-Tailor
-Tailoring website 
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffafc;
+  color: #333;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  background-color: #d63384;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  margin-left: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #ffccf2;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1587049352851-8a3b6eebf1c7?auto=format&fit=crop&w=1350&q=80') center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+.hero h2 {
+  font-size: 42px;
+  margin: 0 0 10px;
+}
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+.btn {
+  background-color: #fff;
+  color: #d63384;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #ffe6f2;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff0f6;
+}
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #d63384;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.service {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 280px;
+}
+.service h3 {
+  color: #d63384;
+}
+
+/* Gallery */
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+.gallery h2 {
+  font-size: 32px;
+  color: #d63384;
+  margin-bottom: 40px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+.item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+.item img:hover {
+  transform: scale(1.05);
+}
+.item h4 {
+  margin: 10px 0 5px;
+  color: #d63384;
+}
+.item p {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Contact */
+.contact {
+  background-color: #fff0f6;
+  text-align: center;
+  padding: 50px 20px;
+}
+.contact h2 {
+  color: #d63384;
+}
+.contact p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #d63384;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
